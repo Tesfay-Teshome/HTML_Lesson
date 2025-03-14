@@ -1,0 +1,78 @@
+/* Base body Styling */
+body{
+    font-family: Arial, sans-serif,verdana,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #21303f;
+    min-height: 100vh;
+
+
+}
+/* This is Heading styling */
+header{
+    display: flex;
+    background: #284166;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+nav a{
+    color:white;
+    text-decoration: none;
+    padding: 10px 5px;
+    border-radius: 5px;
+    transition: all 0.3 ease;
+    position: relative;
+} 
+
+nav a:hover{
+    background: #3498db;
+    transform:translate(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav a::after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 5px;
+  transform: translateX(-50%); 
+  left: 50%;
+  width:0;
+  height: 3px;
+  background: #97d2e9;
+  transition: width 0.3s ease;
+}
+nav a:hover::after{
+    width: 70%;
+}
+h1{
+ color: #2c3e50;
+ border-left: 8px solid #3498db;
+ padding-left: 20px;
+ margin-bottom: 20px;
+ font-size: 2.5rem;
+ text-shadow: 1px 1px 4px rgba(1,1,0,0.5);
+
+}
+h2{
+    color: #2c3e50;
+    padding-left: relative;
+    padding: 15px;
+    margin: 3px 0;
+    font-size: 2em;
+    text-shadow: 1px 1px 4px rgba(1,1,0,0.2);
+}
